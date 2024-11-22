@@ -1,0 +1,96 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;    /* Centraliza verticalmente */
+  flex-direction: column; /* Organiza o conteúdo verticalmente */
+  min-height: 100vh;
+  background: url("./assets/Fundo.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  color: rgb(247, 242, 242);
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 2rem; /* Espaço entre os placares e o cronômetro */
+}
+
+.score {
+  flex: 1;
+  padding: 1rem;
+  margin: 0 1rem;
+  text-align: center;
+  background: rgba(255, 255, 0, 0.5);
+  border-radius: 10px;
+}
+
+.score.yellow-red {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.score-display {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  opacity: 0.8;
+}
+
+.timer {
+  text-align: center;
+ color: black;
+  background: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+  padding: 1rem;
+  border-radius: 10px;
+  width: 80%; /* Garante que o cronômetro ocupe a mesma largura dos placares */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona leve sombra */
+}
+
+.timer #timer-display {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.timer button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.timer button:hover {
+  opacity: 0.8;
+}

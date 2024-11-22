@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+   
+    <div class="scoreboard">
+      <div class="score yellow-red">
+        <div class="score-display" id="score-left">0</div>
+        <div class="buttons">
+          <button onclick="updateScore('left', 5)">+5</button>
+          <button onclick="updateScore('left', 10)">+10</button>
+          <button onclick="updateScore('left', 20)">+20</button>
+          <button onclick="updateScore('left', -5)">-5</button>
+          <button onclick="updateScore('left', -10)">-10</button>
+          <button onclick="updateScore('left', -20)">-20</button>
+        </div>
+      </div>
+      <div class="score yellow">
+        <div class="score-display" id="score-right">0</div>
+        <div class="buttons">
+          <button onclick="updateScore('right', 5)">+5</button>
+          <button onclick="updateScore('right', 10)">+10</button>
+          <button onclick="updateScore('right', 20)">+20</button>
+          <button onclick="updateScore('right', -5)">-5</button>
+          <button onclick="updateScore('right', -10)">-10</button>
+          <button onclick="updateScore('right', -20)">-20</button>
+        </div>
+      </div>
+    </div>
+    <div class="timer">
+      <div id="timer-display">00:00</div>
+      <button onclick="startTimer()">Começar</button>
+      <button onclick="resetTimer()">Voltar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

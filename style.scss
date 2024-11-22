@@ -1,0 +1,97 @@
+$red: rgba(255, 0, 0, 0.5);
+$yellow: rgba(255, 255, 0, 0.5);
+
+body {
+  margin: 0;
+  padding: 0;
+  background: lightblue; // Fundo azul claro
+  height: 100vh; // Ocupa toda a altura da tela
+  display: flex; // Centraliza o conteúdo
+  flex-direction: column; // Organização vertical
+  justify-content: center; // Centraliza verticalmente
+  align-items: center; // Centraliza horizontalmente
+  font-family: Arial, sans-serif; // Fonte padrão
+}
+
+.container {
+  text-align: center;
+  color: black; // Letras em preto
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: black; // Letras em preto
+}
+
+.timer {
+  margin-bottom: 2rem; // Espaço abaixo do cronômetro
+  text-align: center;
+
+  #timer-display {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: black; // Letras em preto
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black; // Letras em preto
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.score {
+  flex: 1;
+  padding: 1rem;
+  margin: 0 1rem;
+  text-align: center;
+  background: $yellow;
+  border-radius: 10px;
+
+  &.yellow-red {
+    background: $red;
+  }
+}
+
+.score-display {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: black; // Letras em preto
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black; // Letras em preto
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
